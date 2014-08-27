@@ -1144,6 +1144,10 @@ public class BrowserActivity extends Activity implements BrowserController {
 					case R.id.action_find:
 						findInPage();
 						return true;
+                    case R.id.action_exit:
+                        finish();
+                        System.exit(0);
+                        return true;
 					default:
 						return true;
 				}
